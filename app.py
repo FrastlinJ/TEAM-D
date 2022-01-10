@@ -3,9 +3,9 @@ import pytesseract
 from PIL import Image
 from flask import Flask, render_template, request, redirect, url_for
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# pytesseract.pytesseract.tesseract_cmd = './vendor/tesseract-ocr/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = './vendor/tesseract-ocr/bin/tesseract'
 
 app = Flask(__name__)
 
