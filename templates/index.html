@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<center><head>
+    <meta charset="UTF-8">
+<title>
+Aadhar card data parsing </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background-color:#ffffff;background-repeat:no-repeat;background-position:center center;background-attachment:fixed;}
+h1{text-align:center;font-family:Calibri, sans-serif;font-size:23px;color:#000000;background-color:#ffffff;}
+p {text-align:center;font-family:Calibri, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
+</style>
+
+</head></center>
+
+ <center><body>
+    <h1>PAN Card Number Extractor</h1>
+     <p>All types of image formats are acceptable</p>
+    <center><form method="POST" action="" enctype="multipart/form-data">
+    
+      <p><input type="file" name="file"></p>
+      <p><input type="submit" value="Submit"></p>
+    </form></center>
+
+    {% if extracted_text %}
+      <p> Your PAN Card number is: <b> {{ extracted_text }} </b></p>
+    
+    {% else %}
+      <p> </p>
+    {% endif %}
+ </body></center>
+</html>
